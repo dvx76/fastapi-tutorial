@@ -1,0 +1,12 @@
+[project]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.126.0",
+    "pwdlib[argon2,bcrypt]>=0.3.0",
+    "pyjwt>=2.10.1",
+    "requests>=2.32.5",
+]

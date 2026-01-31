@@ -1,0 +1,14 @@
+<html>
+
+<head>
+  <title>Item Details</title>
+</head>
+
+<body>
+  <h1>Header details</h1>
+  {{ request.headers }}
+  <h1>Item</h1>
+  <a href="{{ url_for('read_item', id=id) }}">Item ID: {{ id }}</a>
+</body>
+
+</html>
