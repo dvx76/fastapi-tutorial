@@ -371,6 +371,7 @@ dependencies = [
     { name = "pytest" },
     { name = "requests" },
     { name = "sqlalchemy", extra = ["asyncio"] },
+    { name = "sqlmodel" },
 ]
 
 [package.metadata]
@@ -383,6 +384,7 @@ requires-dist = [
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "sqlalchemy", extras = ["asyncio"], specifier = ">=2.0.46" },
+    { name = "sqlmodel", extras = ["asyncio"], specifier = ">=0.0.34" },
 ]
 
 [[package]]
@@ -1021,6 +1023,19 @@ wheels = [
 [package.optional-dependencies]
 asyncio = [
     { name = "greenlet" },
+]
+
+[[package]]
+name = "sqlmodel"
+version = "0.0.34"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pydantic" },
+    { name = "sqlalchemy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3b/6a/b1b26d589063e53a08c10a2d7bc624cba63dec045a312758d68f550a4ea1/sqlmodel-0.0.34.tar.gz", hash = "sha256:577e4aae1ba96ee5038e03d8b1404c642dad1a92e628988cdf4ce68d27abe982", size = 96236, upload-time = "2026-02-16T19:06:34.275Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/eb/ee/1910f4eee41af4268b0d8cd688a05fb8ea23e9e6c64b8710592df24a8c66/sqlmodel-0.0.34-py3-none-any.whl", hash = "sha256:aeabc8f0de32076a0ed9216e88568459d737fca1e7133bfc6d1c657920789a2d", size = 27445, upload-time = "2026-02-16T19:06:35.709Z" },
 ]
 
 [[package]]
